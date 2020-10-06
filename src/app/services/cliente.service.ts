@@ -11,7 +11,7 @@ export class ClienteService {
 
   }
   get(): Cliente[] {
-    return JSON.parse(localStorage.getItem('apoyo'));
+    return JSON.parse(localStorage.getItem('datos'));
   }
 
   add(cliente: Cliente) {
@@ -20,7 +20,7 @@ export class ClienteService {
       clientes = this.get();
     }
     clientes.push(cliente);
-    localStorage.setItem('apoyo', JSON.stringify(clientes));
+    localStorage.setItem('datos', JSON.stringify(clientes));
   }
 
 }
