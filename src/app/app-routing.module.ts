@@ -5,14 +5,17 @@ import{ClienteRegistroComponent}from'./credito/cliente-registro/cliente-registro
 import{HomeComponent}from'./credito/home/home.component';
 
 const routes: Routes = [
-  { path : '/', component : HomeComponent},
-    { path: 'clienteConsulta', component:ClienteConsultaComponent },
-    { path: 'clienteRegistro', component: ClienteRegistroComponent},
-
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(
+    [
+      { path : '', component : HomeComponent},
+      { path: 'clienteConsulta', component:ClienteConsultaComponent },
+      { path: 'clienteRegistro', component: ClienteRegistroComponent},
+      
+    ]
+  )],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
