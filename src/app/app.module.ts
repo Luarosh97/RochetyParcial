@@ -8,6 +8,7 @@ import { ClienteRegistroComponent } from './Credito/cliente-registro/cliente-reg
 import { FooterComponent } from './credito/footer/footer.component';
 import { NavmenuComponent } from './credito/navmenu/navmenu.component';
 import { HomeComponent } from './credito/home/home.component';
+import {ClienteService}  from '../app/services/cliente.service'
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { HomeComponent } from './credito/home/home.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ClienteService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

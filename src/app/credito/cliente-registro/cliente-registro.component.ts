@@ -11,13 +11,14 @@ import { Cliente } from '../models/cliente';
 export class ClienteRegistroComponent implements OnInit {
 
   constructor(private clienteService : ClienteService) { }
-  cliente : Cliente ;
+  cliente : Cliente;
   ngOnInit(): void {
     this.cliente=new Cliente;
   }
   add(){
+    this.cliente.Calcularcapital();
     alert('Cliente registrado con exito'+ JSON.stringify(this.cliente));
-  this.clienteService.add(this.cliente);
+   this.clienteService.add(this.cliente);
         
   }
 }

@@ -22,12 +22,12 @@
         <tbody>
             <tr *ngFor="let cliente of clientes; index as i ">
                 <th scope="row">{{ i + 1 }}</th>
-                <td>{{ cliente.identificación}} </td>
-                <td>{{ cliente.nombre}}</td>
-                <td>{{cliente.capitalInicial }}</td>
-                <td>{{cliente.tasaInteres }}</td>
-                <td>{{ cliente.tiempo }}</td>
-                <td>{{ cliente.valor}}</td>
+                <td>{{cliente.identificación}} </td>
+                <td>{{clientes.nombre}}</td>
+                <td>{{cliente.capitaliniciial}}</td>
+                <td>{{cliente.tasaInteres}}</td>
+                <td>{{ cliente.tiempo}}</td>
+                <td>{{cliente.valor}}</td>
             </tr>
         </tbody>
     </table>
