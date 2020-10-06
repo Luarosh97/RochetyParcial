@@ -13,19 +13,21 @@
                 <th scope="col">#</th>
                 <th scope="col">identificación</th>
                 <th scope="col">Nombre </th>
-                <th scope="col">sexo</th>
-                <th scope="col">Edad</th>
-                <th scope="col">Pulsacion</th>
+                <th scope="col">CapitalInicial</th>
+                <th scope="col">TasaInteres</th>
+                <th scope="col">Tiempo</th>
+                <th scope="col">Valor</th>
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let persona of personas; index as i ">
+            <tr *ngFor="let cliente of clientes; index as i ">
                 <th scope="row">{{ i + 1 }}</th>
-                <td>{{ persona.identificacion }} </td>
-                <td>{{ persona.nombre }}</td>
-                <td>{{persona.sexo }}</td>
-                <td>{{ persona.edad }}</td>
-                <td>{{ persona.pulsacion }}</td>
+                <td>{{ cliente.identificación}} </td>
+                <td>{{ cliente.nombre}}</td>
+                <td>{{cliente.capitalInicial }}</td>
+                <td>{{cliente.tasaInteres }}</td>
+                <td>{{ cliente.tiempo }}</td>
+                <td>{{ cliente.valor}}</td>
             </tr>
         </tbody>
     </table>
