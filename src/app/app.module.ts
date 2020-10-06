@@ -7,6 +7,7 @@ import { ClienteConsultaComponent } from './Credito/cliente-consulta/cliente-con
 import { ClienteRegistroComponent } from './Credito/cliente-registro/cliente-registro.component';
 import { FooterComponent } from './credito/footer/footer.component';
 import { NavmenuComponent } from './credito/navmenu/navmenu.component';
+import { HomeComponent } from './credito/home/home.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { NavmenuComponent } from './credito/navmenu/navmenu.component';
     ClienteConsultaComponent,
     ClienteRegistroComponent,
     FooterComponent,
-    NavmenuComponent
+    NavmenuComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
