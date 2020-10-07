@@ -1,4 +1,4 @@
-import { JsonPipe } from '@angular/common';
+
 import { Component, OnInit } from '@angular/core';
 import { ClienteService } from '../../services/cliente.service';
 import { Cliente } from '../models/cliente';
